@@ -10,13 +10,16 @@ public class Queues {
         fila.add(60);
         fila.offer(25);
         System.out.println(fila);//[50,55,60,25]
-        System.out.println("Estas por ser atendido"+fila.peek());//[50]
+        System.out.println("Estas por ser atendido: "+fila.peek());//[50]
         fila.remove();
         System.out.println(fila); //[55,60,25]
+        System.out.println("Estas por ser atendido: "+fila.peek());
         fila.remove();
         System.out.println(fila); //[60,25]
+        System.out.println("Estas por ser atendido: "+fila.peek());
         fila.remove();
         System.out.println(fila); //[25]
+        System.out.println("Estas por ser atendido: "+fila.peek());
         fila.remove();
         System.out.println(fila); //[]
         System.out.println(fila.peek());
